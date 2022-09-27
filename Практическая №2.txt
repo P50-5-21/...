@@ -1,0 +1,46 @@
+Console.WriteLine("Выберите программу, которую вы хотите запустить \r\n1. Угадай число\r\n2. Таблица умножения\r\n3. Вывод делителей числа\r\n4. Выйти из программы");
+Console.WriteLine("Введите операцию: ");
+int a =
+Convert.ToInt32(Console.ReadLine());
+
+int b = 1;
+Random rand = new Random();
+int Gb = rand.Next(100);
+
+while (true)
+{
+    Console.WriteLine("Угадай число от 0 до 100");
+    int c =
+    Convert.ToInt32(Console.ReadLine());
+    if (c == Gb)
+    {
+        Console.WriteLine("Правильно!");
+        break;
+    }
+    else
+    {
+
+        if (c < Gb)
+        {
+            Console.WriteLine("Надо больше");
+        }
+        else
+        {
+            Console.WriteLine("Надо меньше");
+        }
+
+    }
+}
+Console.WriteLine("Выберите программу, которую вы хотите запустить \r\n1. Угадай число\r\n2. Таблица умножения\r\n3. Вывод делителей числа\r\n4. Выйти из программы");
+Console.WriteLine("Введите операцию: ");
+int d =
+Convert.ToInt32(Console.ReadLine());
+int f = 1;
+for (int i = 1; i < 10; i++)
+{
+Console.WriteLine("\t");
+for (int j = 1; j < 10; j++)
+{
+Console.Write("\t" + i * j);
+}
+}
